@@ -53,7 +53,7 @@ export default function WeddingStory({ onComplete }: WeddingStoryProps) {
       setIsAudioLoaded(true);
       setIsAudioError(false);
     },
-    onloaderror: (error: any) => {
+    onloaderror: (error: unknown) => {
       console.log('Could not load wedding music. Please add wedding-music.mp3 to public/audio/', error);
       setIsAudioLoaded(false);
       setIsAudioError(true);
